@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        header {
+            width: 100%;
+            height: 50px;
+            float: left;
+            box-sizing: border-box;
+            padding: 6px;
+
+
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #brand {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            float: left;
+            margin-left: 24px;
+            color: indigo;
+        }
+
+        #tag_line {
+            float: right;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+            font-family: Segoe Print;
+            margin-right: 24px;
+            color: crimson;
+        }
+
+        nav {
+            width: 100%;
+            height: 106px;
+            float: left;
+            background-color: rgba(0, 249, 166, 0.874);
+            box-sizing: border-box;
+            padding: 30px;
+        }
+
+        #search {
+            width: 400px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        #search_btn {
+            width: 100px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            margin-left: 2px;
+            font-size: 16px;
+
+        }
+
+        #menu_table {
+            width: 600px;
+            height: 40px;
+            float: right;
+        }
+
+        #menu_item {
+            background-color: white;
+            width: 20%;
+            text-align: center;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+
+        section {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 1650px;
+            float: left;
+            box-sizing: border-box;
+            border-width: 1px;
+            padding: 30px;
+        }
+
+        #venue {
+            float: left;
+        }
+
+        #phone {
+            float: right;
+        }
+
+        #popular_sweet_box {
+            width: 720px;
+            height: 550px;
+            float: left;
+            margin-top: 50px;
+            box-sizing: border-box;
+            background-color: darkkhaki;
+            margin-top: 30px;
+            padding: 25px;
+
+        }
+
+        #popular_sweets_title {
+            color: black;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        #popular_sweet_img {
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: white;
+            box-sizing: border-box;
+
+        }
+
+        #rate_list_box {
+            width: 450px;
+            height: 550px;
+            float: right;
+            box-sizing: border-box;
+            margin-top: 30px;
+        }
+
+        #rate_header {
+            height: 50px;
+            background-color: black;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        #rate_content {
+            background-color: crimson;
+        }
+
+        #s_name {
+            color: white;
+            font-family: sans-serif;
+            font-size: 22px;
+            padding: 10px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: white;
+        }
+
+        #rate {
+            list-style: none;
+        }
+
+        fieldset {
+            width: 690px;
+            height: 550px;
+            float: left;
+            margin-top: 50px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            padding: 10px;
+        }
+
+        legend {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #order_online {
+            font-size: 17px;
+            font-family: sans-serif;
+        }
+
+        #order_input {
+            width: 100%;
+            height: 33px;
+            box-sizing: border-box;
+            border-color: #ccc;
+            border-style: solid;
+            margin-top: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-color: #ccc;
+            border-style: solid;
+        }
+
+        #submit_btn {
+            padding: 10px;
+            font-size: 15px;
+            float: right;
+            border-width: 1px;
+            border-color: white;
+            border-style: solid;
+        }
+
+        #about_us {
+            width: 450px;
+            height: 550px;
+            float: right;
+            border-width: 1px;
+            border-color: #ccc;
+            border-style: solid;
+            margin-top: 68px;
+            text-align: center;
+            font-size: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        #m_sweets {
+            float: left;
+            font-family: sans-serif;
+            width: 100%;
+            box-sizing: border-box;
+            
+        }
+
+        #more_sweets{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        #sweets{
+            width: 218px;
+            height: 250px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            float: left;
+            margin-right: 57px;
+
+        }
+        #sweet_end{
+            width: 220px;
+            height: 250px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            float: left;
+            
+        }
+
+        #sweet_img{
+            margin: 20px;
+            width: 180px;
+            height: 150px;
+            
+        }
+
+        #buy_now_btn{
+            padding: 10px;
+            width: 100px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #ccc;
+            border-style: solid;
+            background-color: white;
+        }
+
+        footer{
+            width: 100%;
+            height: 250px;
+            box-sizing: border-box;
+            float: left;
+            background-color: black;
+        }
+
+        #contact_us{
+            width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            float: left;
+            padding: 10px;
+            padding-left: 30px;
+        }
+
+        #social_link{
+            
+            width: 300px;
+            height: 250px;
+            box-sizing: border-box;
+            float: right;
+            
+            
+        }
+
+        #contact_title{
+            font-family: sans-serif;
+            color: white;
+            font-weight: normal;
+        }
+
+        #contact_detail{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-style: normal;
+            margin-bottom: 10px;
+        }
+
+        #social_logo{
+            width: 60px;
+        }
+
+        #social_logoo{
+            width: 45px;
+            margin-bottom: 10px;
+        }
+
+        #developer{
+            float: left;
+            color: white;
+            font-family: sans-serif;
+            margin-top: 224px;
+            margin-left: 164px;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><h1 id="brand">Sweetshop.com</h1></a>
+
+        <p id="tag_line">Handmade Happiness, Crafted with Care</p>
+    </header>
+    <nav>
+        <form action="">
+            <input type="search" name="search" placeholder="Search Sweets here..." id="search">
+
+            <input type="submit" id="search_btn" value="Search">
+        </form>
+
+        <table id="menu_table">
+            <tr>
+                <td id="menu_item"><a href="index.html">Home</a></td>
+                <td id="menu_item"><a href="sweet.html">Sweets</a></td>
+                <td id="menu_item"><a href="bakeries.html">Bakeries</a></td>
+                <td id="menu_item"><a href="#about_us">About us</a></td>
+                <td id="menu_item"><a href="#contact_us">Contact us</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <section>
+
+        <address id="venue">
+            Venue: Gandhinagar, Bhopal, Mp - 462036
+        </address>
+
+        <address id="phone">
+            Order Online : +91-9661134026, +91-9661133006
+        </address>
+
+
+        <div id="popular_sweet_box">
+            <h1 id="popular_sweets_title">Our Popular Sweets</h1>
+
+            <img src="/image/a.jpg" alt="img_a" id="popular_sweet_img" />
+            <img src="/image/b.jpg" alt="img_b" id="popular_sweet_img" />
+            <img src="/image/c.jpg" alt="img_c" id="popular_sweet_img" />
+            <img src="/image/d.jpg" alt="img_d" id="popular_sweet_img" />
+        </div>
+
+        <table id="rate_list_box">
+            <tr>
+                <td id="rate_header">Sweet Name</td>
+                <td id="rate_header">Sweet Price</td>
+            </tr>
+
+            <tr>
+                <td id="rate_content">
+                    <ol>
+                        <li id="s_name">Rasgulla</li>
+                        <li id="s_name">Laddo</li>
+                        <li id="s_name">Jalebi</li>
+                        <li id="s_name">Raskadam</li>
+                        <li id="s_name">Rasmlai</li>
+                        <li id="s_name">Gulab jamun</li>
+                        <li id="s_name">Barfi</li>
+                        <li id="s_name">kaju katli</li>
+                        <li id="s_name">Peda</li>
+                        <li id="s_name">Ghevar</li>
+                    </ol>
+                </td>
+                <td id="rate_content">
+                    <ol id="rate">
+                        <li id="s_name">₹220/kg</li>
+                        <li id="s_name">₹350/kg</li>
+                        <li id="s_name">₹400/kg</li>
+                        <li id="s_name">₹800/kg</li>
+                        <li id="s_name">₹180/kg</li>
+                        <li id="s_name">₹225/kg</li>
+                        <li id="s_name">₹400/kg</li>
+                        <li id="s_name">₹1,150 /kg</li>
+                        <li id="s_name">₹450/kg</li>
+                        <li id="s_name">₹600/kg</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+
+        <fieldset id="frm_box">
+
+            <legend>
+                Order Online
+            </legend>
+
+            <form id="order_online">
+                Your Name:
+                <br>
+                <input type="text" name="name" id="order_input">
+                <br><br>
+
+                Mobile No.
+                <br>
+                <input type="number" name="number" id="order_input">
+                <br><br>
+
+                Choose Sweet:
+                <br>
+                <select name="choose_sweets" id="order_input">
+                    <option value="Rasgulla">Rasgulla</option>
+                    <option value="Laddo">Laddo</option>
+                    <option value="Jalebi">Jalebi</option>
+                    <option value="Raskadam">Raskadam</option>
+                    <option value="Rasmlai">Rasmalai</option>
+                    <option value="Gulab jamun">Gulab jamun</option>
+                    <option value="Barfi">Barfi</option>
+                    <option value="Kaju katli">Kaju katli</option>
+                    <option value="Peda">Peda</option>
+                    <option value="Ghevar">Ghevar</option>
+                </select>
+
+                <br><br>
+
+                Choose Quantity:
+                <br>
+                <input type="text" name="Quantity" id="order_input">
+                <br><br>
+
+                Address:
+                <br>
+                <textarea name="address"></textarea>
+                <br><br>
+
+                <input type="submit" value="Order Now!" id="submit_btn">
+
+            </form>
+        </fieldset>
+
+        <div id="about_us">
+            <h1>About Us</h1>
+            <hr>
+            <p style="text-align: justify;">&#x2022 Welcome to Sweetshop.com – your ultimate destination for handmade
+                sweets crafted with love and tradition!
+                <br><br>
+                &#x2022 At Sweetshop.com, we believe sweets are not just food they are moments of happiness, shared with
+                friends and family. We bring you an irresistible range of authentic Indian sweets, made fresh with
+                high-quality ingredients and time-honored recipes passed down through generations.
+                <br><br>
+
+                &#x2022 Located in Gandhinagar, Bhopal (MP), we specialize in popular delights like Rasgulla, Gulab
+                Jamun, Kaju Katli, Peda, Ghevar, and many more. Whether it's a festival, a celebration, or just your
+                sweet craving – we have something special for everyone.
+                <br><br>
+                ✨ Why Choose Us?
+                <br>
+                &#x2022 Pure, fresh & homemade sweets
+                <br>
+                &#x2022 Carefully selected ingredients
+                <br>
+                &#x2022 Hygienic preparation
+                <br>
+                &#x2022 Prompt home delivery
+                <br><br>
+                Experience the true taste of tradition – because every bite should be a sweet memory. ❤️
+            </p>
+        </div>
+
+
+        <div id="m_sweets">
+            <h1 id="more_sweets">More Sweets</h1>
+        </div>
+
+
+        <div id="sweets">
+                <img src="image/a.png" alt="a_png" id="sweet_img">
+                <a href="#frm_box"><center><button id="buy_now_btn">Buy Now!</button></center></a>
+        </div>
+
+        <div id="sweets">
+                <img src="image/b.png" alt="b_png" id="sweet_img">
+                <a href="#frm_box"><center><button id="buy_now_btn">Buy Now!</button></center></a> 
+        </div>
+
+        <div id="sweets">
+                <img src="image/c.png" alt="c_png" id="sweet_img">
+                <a href="#frm_box"><center><button id="buy_now_btn">Buy Now!</button></center></a>
+        </div>
+
+        <div id="sweets">
+                <img src="image/d.png" alt="d_png" id="sweet_img">
+                <a href="#frm_box"><center><button id="buy_now_btn">Buy Now!</button></center></a>
+        </div>
+
+        <div id="sweet_end">
+                <img src="image/e.jpg" alt="e_jpg" id="sweet_img">
+                <a href="#frm_box"><center><button id="buy_now_btn">Buy Now!</button></center></a>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div id="contact_us">
+
+            <h1 id="contact_title">Contact Us</h1>
+            <address id="contact_detail">Website: Sweetshop.com</address> 
+            <address id="contact_detail">Phone No: +91-9661134026</address> 
+            <address id="contact_detail">Email id: sweetshop@gmail.com</address>
+            <address id="contact_detail">Address: Gandhinagar,Raja Bhoj Airport, 462036</address>
+            
+            
+        </div>
+
+
+
+        <div id="developer">
+            Developed By: Shrit Kumar
+        </div>
+        
+        
+        <div id="social_link">
+            <h1 id="contact_title">Follow Us</h1>
+            
+            <a href="https://github.com/Shrit-kumar"><img src="image/img.png" alt="github" id="social_logoo"></a>
+           
+            <a href="https://www.linkedin.com/in/shritkumar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="image/li.png" alt="linkedin" id="social_logo"></a>
+           
+            <a href="https://x.com/NayakShrit?t=gpSodvEhJO0xQvYxP6X1BA&s=09"><img src="image/x img.png" alt="tweeter" id="social_logo"></a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
